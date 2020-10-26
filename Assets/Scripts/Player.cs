@@ -21,4 +21,10 @@ public class Player : MonoBehaviour {
 		this.diePanel.SetActive(true);
 		return false;
 	}
+	
+	public void CollectPearls()
+    {
+        Storage.Pearls++;
+    }
+
 }
