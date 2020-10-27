@@ -12,13 +12,15 @@ public class Display : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
-        PearlsText.text = "Pearls: " + Storage.Pearls.ToString() + " / " + Storage.MaxPearls.ToString();
-        if(Storage.Pearls == Storage.MaxPearls){
-            PearlsText.text += "\n All pearls are collected";
-		}
+        if (!Storage.isEnd)
+        {
+            PearlsText.text = "Pearls: " + Storage.Pearls.ToString() + " / " + Storage.MaxPearls.ToString();
+            if (Storage.Pearls == Storage.MaxPearls)
+            {
+                PearlsText.text += "\n All pearls are collected";
+            }
+        }
     }
 }

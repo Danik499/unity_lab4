@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         sink = new Vector3(0, -1, 0);
+        cr = GetComponent<CharacterController>();
     }
 
     void Update()

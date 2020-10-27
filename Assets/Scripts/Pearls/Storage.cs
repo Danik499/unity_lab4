@@ -8,4 +8,6 @@ public class Storage : MonoBehaviour
 
     public static int MaxPearls = 10;
 
+    public static bool isEnd = false;
+
 }
